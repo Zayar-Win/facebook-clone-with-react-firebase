@@ -1,0 +1,20 @@
+.friend {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.friend > p {
+  color: white;
+  padding-left: 10px;
+}
+
+.friend:hover {
+  background-color: #303031;
+}
+
+.friend > .MuiAvatar-root {
+  width: 30px;
+  height: 30px;
+}

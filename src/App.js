@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import FeedTemplate from "./components/FeedTemplate";
+import Header from "./components/Header";
+import { useState, useEffect } from "react";
+import Login from "./components/Login";
+import {
+  useSelector,
+  useDispatch,
+} from "react-redux";
+import { getUserLoginOrNot } from "./redux/actions/index";
 
 function App() {
+  const data = useSelector(
+    (state) => state.userState
+  );
+  const dispatch = useDispatch();
+  const { user } = data;
+
+  useEffect(() => {
+    dispatch(getUserLoginOrNot());
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!user ? (
+        <Login />
+      ) : (
+        <div className='app'>
+          {/* Header */}
+          <Header />
+          <Router>
+            <Routes>
+              <Route
+                path='/'
+                element={<FeedTemplate />}
+              />
+            </Routes>
+          </Router>
+        </div>
+      )}
+    </>
   );
 }
 

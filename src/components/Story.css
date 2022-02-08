@@ -1,0 +1,16 @@
+.story {
+  display: flex;
+  max-width: 580px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.story__container {
+  display: flex;
+  cursor: grab;
+}
+
+.story::-webkit-scrollbar {
+  display: none;
+}

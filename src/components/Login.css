@@ -1,0 +1,38 @@
+.login {
+  background-color: #297be5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login > .logincard {
+  display: flex;
+  background-color: white;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 400px;
+  user-select: none;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.login > .logincard > img {
+  height: 150px;
+}
+.login > .logincard > h4 {
+  margin-top: 20px;
+  color: #297be5;
+}
+.login > .logincard > p {
+  margin: 20px;
+  font-weight: 400;
+}
+
+.login > .logincard > button {
+  background-color: #297be5;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+}

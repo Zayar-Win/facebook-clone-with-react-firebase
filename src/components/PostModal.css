@@ -1,0 +1,61 @@
+.postmodal {
+  background: #242526;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 10px;
+  margin: 20px 70px;
+}
+.post {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #4e4f50;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.post > .MuiAvatar-root {
+  width: 40px;
+  height: 40px;
+}
+
+.post > button {
+  flex: 1;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  background-color: #4e4f50;
+  text-align: left;
+  padding-left: 20px;
+  color: #b8bbbf;
+  font-size: 15px;
+}
+.icons {
+  display: flex;
+}
+.icons > .icon {
+  display: flex;
+  flex: 0.33;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.icons > .icon:hover {
+  background-color: #3a3b3c;
+}
+.icons > .icon > .MuiSvgIcon-root {
+  margin-right: 10px;
+}
+
+.icons > .live > .MuiSvgIcon-root {
+  color: #f4556f;
+}
+.icons > .photo > .MuiSvgIcon-root {
+  color: #58c472;
+}
+.icons > .emogi > .MuiSvgIcon-root {
+  color: #f8c03e;
+}

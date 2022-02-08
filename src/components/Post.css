@@ -1,0 +1,76 @@
+.posts {
+  margin: 20px 70px;
+  background: #242526;
+  border-radius: 5px;
+  padding: 10px 0px;
+  padding-bottom: 2px;
+}
+.posts > .postheader {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+
+  justify-content: space-between;
+}
+.posts > .postheader > .postheader__left {
+  display: flex;
+}
+.posts
+  > .postheader
+  > .postheader__left
+  > .postheader__leftInfo {
+  margin-left: 10px;
+  color: white;
+}
+.posts
+  > .postheader
+  > .postheader__left
+  > .postheader__leftInfo
+  > span {
+  font-size: 12px;
+  color: #b0b3aa;
+}
+.posts
+  > .postheader
+  > .postheader__right
+  > .MuiSvgIcon-root {
+  color: #919397;
+}
+.posts > .description {
+  padding: 0px 20px;
+}
+.posts > .description > p {
+  margin-top: 10px;
+  color: white;
+}
+.posts > .image {
+  margin: 10px 0;
+}
+.posts > .image > img {
+  width: 100%;
+}
+.posts > .desicion {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid #4e4f50;
+}
+.posts > .desicion > div {
+  margin: 5px 0;
+  flex: 0.33;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  justify-content: center;
+  transition: all 0.2s linear;
+  color: #b8bbbf;
+}
+.posts > .desicion > div:hover {
+  background-color: #3a3b3c;
+}
+.posts > .desicion > div > p {
+  padding-left: 5px;
+}

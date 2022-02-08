@@ -1,0 +1,44 @@
+.sidebar__option {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.sidebar__option:hover {
+  background-color: #303031;
+}
+.sidebar__option > p {
+  color: white;
+  font-weight: 500;
+}
+.sidebar__option > .friends > .MuiSvgIcon-root {
+  color: #3291f6;
+}
+.sidebar__option > .Saved > .MuiSvgIcon-root {
+  color: #9a4ed8;
+}
+.sidebar__option > .Events > .MuiSvgIcon-root {
+  color: #d06a7c;
+}
+.sidebar__option > .Groups > .MuiSvgIcon-root {
+  color: #1863c5;
+}
+.sidebar__option > .Watch > .MuiSvgIcon-root {
+  color: #50c8cd;
+}
+.sidebar__option > .Memory > .MuiSvgIcon-root {
+  color: #65d9ca;
+}
+.sidebar__option > .Pages > .MuiSvgIcon-root {
+  color: #ea6440;
+}
+
+.sidebar__option > .user > .MuiAvatar-root {
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+}
+
+.sidebar__option > div > .MuiSvgIcon-root {
+  margin: 8px;
+  color: white;
+}

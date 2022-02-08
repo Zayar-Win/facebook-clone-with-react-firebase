@@ -1,0 +1,194 @@
+.postmodalbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.postmodalbox > .box {
+  width: 500px;
+  position: relative;
+  background: #242526;
+  border-radius: 5px;
+}
+.postmodalbox > .box > .box__header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  border-bottom: 1px solid #4e4f50;
+}
+.postmodalbox
+  > .box
+  > .box__header
+  > .MuiSvgIcon-root {
+  position: absolute;
+  right: 15px;
+  font-size: 30px;
+  font-weight: 200;
+  color: #3a3b3c;
+  transition: all 0.3s linear;
+}
+.postmodalbox
+  > .box
+  > .box__header
+  > .MuiSvgIcon-root:hover {
+  color: white;
+}
+
+.postmodalbox > .box > .box__body {
+  padding: 10px 20px;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .box__userInfo {
+  display: flex;
+  align-items: center;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .box__userInfo
+  > .userInfo {
+  padding-left: 10px;
+  color: white;
+  font-weight: 400;
+}
+.postmodalbox > .box > .box__body > .postInput {
+  width: 100%;
+  margin-top: 15px;
+  height: 80px;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postInput
+  > textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+.postmodalbox > .box > .box__body > .postOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #4e4f50;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > .photo
+  > input {
+  display: none;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > div:hover {
+  background-color: #3a3b3c;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > .photo
+  > label
+  > .MuiSvgIcon-root {
+  color: #4e9560;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > .group {
+  color: #3085f3;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > .emoji {
+  color: #f8c03e;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > .location {
+  color: #f66551;
+}
+.postmodalbox
+  > .box
+  > .box__body
+  > .postOption
+  > .option
+  > .mic {
+  color: #f23e5c;
+}
+.postmodalbox > .box > .box__body > button {
+  margin-top: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: #858686;
+  font-size: 15px;
+  background-color: #505151;
+}

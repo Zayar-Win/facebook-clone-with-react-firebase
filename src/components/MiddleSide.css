@@ -1,0 +1,12 @@
+.middle__side {
+  flex: 0.5;
+  padding-top: 20px;
+  overflow-y: scroll;
+  color: white;
+}
+.middle__side > p {
+  text-align: center;
+}
+.middle__side::-webkit-scrollbar {
+  display: none;
+}
